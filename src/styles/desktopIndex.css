@@ -1,0 +1,56 @@
+@media (min-width: 769px) {
+    .header {
+        padding: 1.875rem 6.25rem;
+    }
+
+    .total-div {
+        width: 70%;
+    }
+
+    .div-post-and-follow {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .user-post {
+        width: 44.5625rem;
+        margin-right: 1.875rem;
+    }
+
+    .divider-user-button {
+        flex-direction: row;
+    }
+
+    .divider-user-desc {
+        height: 3.25rem;
+    }
+
+    .aside {
+        width: 26.3125rem;
+        margin-top: 9.5rem;
+    }
+
+    .div-aside {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .suggestion-h2 {
+        margin-bottom: 4.375rem;
+    }
+
+    .section-posts {
+        width: 44.5625rem;
+    }
+
+    .list-post {
+        height: 22.375rem;
+    }
+
+    .modal {
+            width: 47.5625rem;
+    }
+
+}
