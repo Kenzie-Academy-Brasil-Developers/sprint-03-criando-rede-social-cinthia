@@ -8,12 +8,12 @@ import {users, posts, suggestUsers} from "./database.js";
  * @param {*} posts 
  */
 function renderPost(posts) {
-    const sectionPosts = document.querySelector(`.section-posts`);
-    sectionPosts.innerHTML = ``;
+    const ulPosts = document.querySelector(`.ul-posts`);
+    ulPosts.innerHTML = ``;
 
     posts.forEach((post) => {
         const createdPost = createPost(post);
-        sectionPosts.appendChild(createdPost);
+        ulPosts.appendChild(createdPost);
     })
 }
 
@@ -274,7 +274,7 @@ function createModal(posts) {
     const userDescription = document.createElement(`span`);
     const mainTitle = document.createElement(`h1`);
     const subtitle = document.createElement(`span`);
-    const spanXDiv = document.createElement(`div`);
+    const buttonCloseModal = document.createElement(`div`);
     const spanX = document.createElement(`span`);
 
     divIconAndUser.classList.add(`divider-icon-user`);
@@ -294,17 +294,17 @@ function createModal(posts) {
     subtitle.innerText = posts.text;
     subtitle.classList.add(`subtitle-modal`);
 
-    spanXDiv.classList.add(`span-x-div`);
+    buttonCloseModal.classList.add(`button-close-modal`);
     spanX.innerText = `X`;
     spanX.classList.add(`span-x`);
 
     modal.appendChild(divModal);
-    divModal.append(divIconAndUser, mainTitle, subtitle, spanXDiv);
-    spanXDiv.appendChild(spanX);
+    divModal.append(divIconAndUser, mainTitle, subtitle, buttonCloseModal);
+    buttonCloseModal.appendChild(spanX);
     divIconAndUser.append(userIcon, divUsernameAndDescription);
     divUsernameAndDescription.append(userName, userDescription);
 
-    spanXDiv.addEventListener(`click`, () => {
+    buttonCloseModal.addEventListener(`click`, () => {
         modal.close();
     })
     return modal;

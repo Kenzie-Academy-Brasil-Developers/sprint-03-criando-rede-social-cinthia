@@ -31,12 +31,12 @@ main {
     padding: 0rem;
 }
 
-.total-div {
+.content-container {
     width: 80%;
 }
 
 
-.div-post-and-follow {
+.section-post-and-follow {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -173,7 +173,7 @@ main {
 
 }
 
-.section-posts {
+.ul-posts {
     width: 100%;
     padding-bottom: 5rem;
 }
@@ -269,7 +269,7 @@ main {
     color: var(--grey-3);
 }
 
-.span-x-div {
+.button-close-modal {
     top: 1.125rem;
     right: 0.9063rem;
     position: absolute;

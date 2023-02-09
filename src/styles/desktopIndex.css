@@ -3,11 +3,11 @@
         padding: 1.875rem 6.25rem;
     }
 
-    .total-div {
+    .content-container {
         width: 70%;
     }
 
-    .div-post-and-follow {
+    .section-post-and-follow {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -41,7 +41,7 @@
         margin-bottom: 4.375rem;
     }
 
-    .section-posts {
+    .ul-posts {
         width: 44.5625rem;
     }
 
